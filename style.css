@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+
+:root {
+    --accent: #ffc107;
+    --nav-bg: #090909;
+    --body-bg: #100f0f;
+    --nav-text: #ffffff;
+    --hover-bg: #1f1f1f;
+}
+
+body {
+    background-color: var(--body-bg);
+}
+
+.navbar {
+    background-color: var(--nav-bg) !important;
+    color: var(--accent) !important;
+}
+
+.navbar-brand {
+    color: var(--accent) !important;
+}
+
+.dropdown-menu {
+    background-color: var(--nav-bg);
+}
+
+.dropdown-item {
+    color: var(--accent);
+}
+
+.dropdown-item:hover {
+    background-color: var(--hover-bg);
+    color: var(--nav-text);
+}
