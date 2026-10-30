@@ -22,6 +22,10 @@ body {
 }
 
 .navbar-brand {
+    color: var(--accent);
+}
+
+.navbar-brand2 {
     color: var(--accent) !important;
 }
 
@@ -35,5 +39,18 @@ body {
 
 .dropdown-item:hover {
     background-color: var(--hover-bg);
+    color: var(--nav-text);
+}
+
+.hero-section {
+    background-image: url(./photo_2026-10-30_20-40-14.jpg);
+    background-size: cover;
+    background-position: center 1px;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+}
+
+.btn:hover {
     color: var(--nav-text);
 }
