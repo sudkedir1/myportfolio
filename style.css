@@ -3,7 +3,6 @@
     margin: 0;
 }
 
-
 :root {
     --accent: #ffc107;
     --nav-bg: #090909;
@@ -16,17 +15,23 @@ body {
     background-color: var(--body-bg);
 }
 
+/* Apply the dark background to the navbar */
 .navbar {
     background-color: var(--nav-bg) !important;
-    color: var(--accent) !important;
 }
 
-.navbar-brand {
-    color: var(--accent);
-}
-
+/* Nav links styling */
+.navbar-brand,
 .navbar-brand2 {
     color: var(--accent) !important;
+}
+
+.navbar-nav .nav-link {
+    color: var(--accent) !important;
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--nav-text) !important;
 }
 
 .dropdown-menu {
@@ -45,12 +50,26 @@ body {
 .hero-section {
     background-image: url(./photo_2026-10-30_20-40-14.jpg);
     background-size: cover;
-    background-position: center 1px;
-    background-repeat: no-repeat;
-    height: 100vh;
+    background-position: center;
+    min-height: 100vh;
     width: 100%;
 }
 
-.btn:hover {
-    color: var(--nav-text);
+.btn-hero {
+    background-color: var(--accent);
+    color: var(--nav-bg);
+    font-weight: 600;
+}
+
+.btn-hero:hover {
+    background-color: #e0a800;
+    color: #000;
+}
+
+.about-section2 {
+    background: linear-gradient(to bottom, rgb(12, 14, 29), rgb(12, 14, 29), #826613);
+}
+
+.about-h2 {
+    color: var(--accent);
 }
